@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Renting de Coches</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,62 +11,106 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
-            text-align: center;
         }
         header {
             background-color: #1B3768;
             color: white;
-            padding: 10px 0;
+            padding: 20px;
+            text-align: center;
         }
         nav {
-            margin: 15px 0;
+            text-align: center;
+            background-color: #333;
+            padding: 10px;
         }
         nav a {
-            color: #1B3768;
+            color: white;
             text-decoration: none;
             margin: 0 15px;
         }
         section {
             padding: 20px;
         }
+        .services, .vehicles, .contact {
+            margin: 20px 0;
+        }
+        h2 {
+            color: #1B3768;
+        }
+        .vehicles img {
+            width: 200px;
+            height: auto;
+        }
+        .vehicle-card {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+        }
         footer {
-            background-color: #333;
+            background-color: #1B3768;
             color: white;
-            padding: 10px 0;
+            text-align: center;
+            padding: 10px;
             position: fixed;
-            width: 100%;
             bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenido a Mi Página Web</h1>
+        <h1>Renting de Coches</h1>
+        <p>Encuentra el coche perfecto para tus necesidades.</p>
     </header>
-    
+
     <nav>
-        <a href="#home">Inicio</a>
-        <a href="#about">Sobre Mí</a>
+        <a href="#services">Servicios</a>
+        <a href="#vehicles">Vehículos Disponibles</a>
         <a href="#contact">Contacto</a>
     </nav>
-    
-    <section id="home">
-        <h2>Inicio</h2>
-        <p>Esta es una página web sencilla creada como ejemplo.</p>
+
+    <section id="services" class="services">
+        <h2>Servicios de Renting</h2>
+        <p>Ofrecemos una amplia gama de servicios de renting para adaptarnos a tus necesidades. Ya sea para uso personal o empresarial, tenemos el coche perfecto para ti.</p>
+        <ul>
+            <li>Renting a corto y largo plazo</li>
+            <li>Mantenimiento incluido</li>
+            <li>Seguro a todo riesgo</li>
+            <li>Asistencia en carretera 24/7</li>
+        </ul>
     </section>
-    
-    <section id="about">
-        <h2>Sobre Mí</h2>
-        <p>Me llamo [Tu Nombre] y estoy aprendiendo a crear páginas web.</p>
+
+    <section id="vehicles" class="vehicles">
+        <h2>Vehículos Disponibles</h2>
+        <div class="vehicle-card">
+            <img src="https://via.placeholder.com/200" alt="Coche 1">
+            <h3>Coche Compacto</h3>
+            <p>Desde 250€/mes</p>
+        </div>
+        <div class="vehicle-card">
+            <img src="https://via.placeholder.com/200" alt="Coche 2">
+            <h3>SUV Familiar</h3>
+            <p>Desde 400€/mes</p>
+        </div>
+        <div class="vehicle-card">
+            <img src="https://via.placeholder.com/200" alt="Coche 3">
+            <h3>Deportivo</h3>
+            <p>Desde 600€/mes</p>
+        </div>
     </section>
-    
-    <section id="contact">
+
+    <section id="contact" class="contact">
         <h2>Contacto</h2>
-        <p>Puedes contactarme en: <a href="mailto:tuemail@example.com">tuemail@example.com</a></p>
+        <p>Para más información o para reservar un coche, contáctanos:</p>
+        <p>Email: contacto@rentingcoches.com</p>
+        <p>Teléfono: +34 123 456 789</p>
     </section>
-    
+
     <footer>
-        <p>© 2024 Mi Página Web</p>
+        <p>© 2024 Renting de Coches - Todos los derechos reservados</p>
     </footer>
 </body>
 </html>
